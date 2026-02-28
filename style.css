@@ -1,0 +1,15 @@
+body {
+  background-color: #f0f8ff; /* This is a light blue color */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #2e8b57; /* This is a nice sea green */
+}
+
+p {
+  font-size: 20px;
+  color: #333;
+}
