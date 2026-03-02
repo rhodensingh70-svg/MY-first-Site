@@ -1,12 +1,12 @@
 body {
-  background-color: #f0f8ff; /* This is a light blue color */
+  background-color: #5eeb34; /* This is a light blue color */
   font-family: Arial, sans-serif;
   text-align: center;
   margin-top: 50px;
 }
 
 h1 {
-  color: #2e8b57; /* This is a nice sea green */
+  color: #5eeb34; /* This is a nice sea green */
 }
 
 p {
@@ -20,3 +20,4 @@ img {
   box-shadow: 0px 4px 8px rgba(0,0,0,0.2); /* This adds a shadow */
   width: 300px;
 }
+
