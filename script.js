@@ -41,5 +41,28 @@ button {
 }
 
 button:hover {
+
+.contact-section {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 40px auto; /* Isse form center mein aa jayega */
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+textarea {
+    height: 80px;
+}
   background-color: #2980b9; /* Button par mouse le jaane se color change hoga */
 }
+
