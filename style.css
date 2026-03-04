@@ -39,7 +39,19 @@ input, textarea {
     border-radius: 5px;
     font-family: inherit;
 }
+.social-icons i {
+    font-size: 30px;
+    margin: 10px;
+    color: #2c3e50;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    color: #3498db;
+    transform: scale(1.2); /* Icon thoda bada ho jayega hover par */
+}
 
 textarea {
     height: 80px;
 }
+
