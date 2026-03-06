@@ -8,7 +8,7 @@ function checkGuess() {
     if (isNaN(userNum)) {
         result.innerHTML = "Pehle number toh likho! 😂";
         result.style.color = "orange";
-    } else if (userNum === secretNum) {
+    } else if (userNum == secretNum) {
         result.innerHTML = "🎉 Mubarak ho! Sahi guess kiya!";
         result.style.color = "white";
         // Naya number set karein agli baar ke liye
@@ -18,3 +18,4 @@ function checkGuess() {
         result.style.color = "yellow";
     }
 }
+
