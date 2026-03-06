@@ -1,20 +1,20 @@
-
-let randomNumber = Math.floor(Math.random() * 10) + 1;
+let secretNum = Math.floor(Math.random() * 10) + 1;
 
 function checkGuess() {
-    let userGuess = document.getElementById("guessInput").value;
+    let input = document.getElementById("guessInput");
     let result = document.getElementById("gameResult");
+    let userNum = parseInt(input.value);
 
-    if (userGuess == "") {
-        result.innerHTML = "Pehle koi number toh likho! 😂";
+    if (isNaN(userNum)) {
+        result.innerHTML = "Pehle number toh likho! 😂";
         result.style.color = "orange";
-    } else if (userGuess == randomNumber) {
+    } else if (userNum === secretNum) {
         result.innerHTML = "🎉 Mubarak ho! Sahi guess kiya!";
-        result.style.color = "green";
-        // Agli baar ke liye naya number generate karna
-        randomNumber = Math.floor(Math.random() * 10) + 1;
+        result.style.color = "white";
+        // Naya number set karein agli baar ke liye
+        secretNum = Math.floor(Math.random() * 10) + 1;
     } else {
         result.innerHTML = "❌ Galat! Phir se koshish karo.";
-        result.style.color = "red";
+        result.style.color = "yellow";
     }
 }
