@@ -16,3 +16,14 @@ function checkGuess() {
         result.innerHTML = "📈 Thoda CHOTA number socho!";
     }
 }
+function toggleDarkMode() {
+    let body = document.body;
+    // Agar background green hai toh dark kar do, varna wapas green
+    if (body.style.backgroundColor === "rgb(46, 204, 113)" || body.style.backgroundColor === "") {
+        body.style.backgroundColor = "#2c3e50";
+        body.style.color = "white";
+    } else {
+        body.style.backgroundColor = "#2ecc71";
+        body.style.color = "black";
+    }
+}
