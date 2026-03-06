@@ -79,6 +79,30 @@ textarea {
     font-weight: bold;
     margin-top: 10px;
 }
+/* Animation banane ka tareeka */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Isse Heading par apply karo */
+h1 {
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Buttons ko thoda "uuchalane" wala effect do */
+button:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    background-color: #27ae60;
+}
+
 
 
 
