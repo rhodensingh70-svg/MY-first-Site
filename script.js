@@ -9,7 +9,9 @@ function checkGuess() {
         result.innerHTML = "Oye! Pehle number toh likho! 😂";
         result.style.color = "orange";
     } 
-    else if (userNum === secretNum) {
+    else if (userNum === secretNum)
+    document.body.style.backgroundColor = "#f1c40f"; // Gold color for win!
+setTimeout(() => { document.body.style.backgroundColor = "#2ecc71"; }, 1000);{
         result.innerHTML = "🎉 SHABAASH! Ekdam sahi pakde hain!";
         result.style.color = "white";
         // Sahi hone par naya number sochne do computer ko
@@ -24,3 +26,4 @@ function checkGuess() {
         result.style.color = "yellow";
     }
 }
+
