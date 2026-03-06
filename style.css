@@ -66,3 +66,19 @@ textarea {
     transform: scale(1.2); /* Icon thoda bada ho jayega hover par */
 }
 
+.game-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 20px auto;
+    border: 2px dashed #3498db;
+}
+
+#gameResult {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
