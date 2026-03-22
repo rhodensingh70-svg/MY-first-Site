@@ -87,5 +87,26 @@ function calculateResult() {
     }
 }
 
+// 1. Number screen par dikhane ke liye
+function addToCalc(value) {
+    let display = document.getElementById("calcDisplay");
+    display.value += value;
+}
 
+// 2. Screen saaf (Clear) karne ke liye
+function clearCalc() {
+    document.getElementById("calcDisplay").value = "";
+}
+
+// 3. Hisaab lagane ke liye (Equal to button)
+function calculateResult() {
+    let display = document.getElementById("calcDisplay");
+    try {
+        // eval() function calculation kar deta hai
+        display.value = eval(display.value);
+    } catch (e) {
+        display.value = "Error";
+        setTimeout(clearCalc, 1000); // 1 sec baad clear ho jayega
+    }
+}
 
