@@ -9,6 +9,8 @@ function checkGuess() {
         result.innerHTML = "Pehle number likho! 😂";
     } else if (userNum == secretNum) {
         result.innerHTML = "🎉 Mubarak ho! Sahi guess kiya!";
+     let winSound = new Audio('https://www.myinstants.com/media/sounds/victory.mp3');
+winSound.play();
         secretNum = Math.floor(Math.random() * 10) + 1;
     } else if (userNum < secretNum) {
         result.innerHTML = "📉 Thoda BADA number socho!";
