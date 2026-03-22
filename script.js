@@ -48,7 +48,20 @@ function showTime() {
 showTime(); // Clock chalu karne ke liye
 
 
+let song = document.getElementById("mySong");
 
+function playMusic() {
+    song.play();
+}
+
+function pauseMusic() {
+    song.pause();
+}
+
+function changeVolume() {
+    let vol = document.getElementById("volumeControl").value;
+    song.volume = vol;
+}
 
 
 
