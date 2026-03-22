@@ -20,7 +20,17 @@ img {
   box-shadow: 0px 4px 8px rgba(0,0,0,0.2); /* This adds a shadow */
   width: 300px;
 }
+.music-section {
+    text-align: center;
+    border: 2px solid #3498db;
+    max-width: 400px;
+    margin: 20px auto;
+}
 
+.music-section button {
+    margin: 5px;
+    background-color: #e74c3c; /* Red color for music buttons */
+}
 
 .contact-section {
     background: white;
