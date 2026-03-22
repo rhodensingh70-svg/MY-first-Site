@@ -65,7 +65,27 @@ function changeVolume() {
     song.volume = vol;
 }
 
+let calcDisplay = document.getElementById("calcDisplay");
 
+// Number ya operator screen par dikhane ke liye
+function addToCalc(value) {
+    calcDisplay.value += value;
+}
+
+// Screen saaf karne ke liye
+function clearCalc() {
+    calcDisplay.value = "";
+}
+
+// Final result nikalne ke liye
+function calculateResult() {
+    try {
+        calcDisplay.value = eval(calcDisplay.value);
+    } catch (error) {
+        calcDisplay.value = "Error!";
+        setTimeout(clearCalc, 1500); // 1.5 sec baad saaf ho jayega
+    }
+}
 
 
 
